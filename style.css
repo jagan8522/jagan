@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  section {
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 2px;
+    height: 20px;
+  }
+  
+ 
+#productGallery {
+    padding: 30px;
+    background-color: #f9f9f9;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    color: #007BFF;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #666;
+  }
+/* Testimonials Styles */
+#testimonials {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .testimonial h4 {
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 10px;
+  }
+    /* Contact Form Styles */
+#contactForm {
+    padding: 30px;
+    background-color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  /* VR Demo Section */
+#vrDemo {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .vr-demo iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+  }
+/* Live Chat Styles */
+#chatBox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #chatBox textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #chatBox button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #chatBox button:hover {
+    background-color: #0056b3;
+  }
+  
+  #chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #chatButton:hover {
+    background-color: #218838;
+  }
+/* Newsletter Styles */
+#newsletter {
+    padding: 30px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+  }
+  
+  #newsletter input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+  }
+  
+  #newsletter button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #newsletter button:hover {
+    background-color: #218838;
+  }
+/* Animations */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+/* Search Bar Styles */
+#search {
+    padding: 30px;
+    background-color: #fff;
+  }
+  
+  #search input {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #searchResults {
+    margin-top: 20px;
+  }
+          
